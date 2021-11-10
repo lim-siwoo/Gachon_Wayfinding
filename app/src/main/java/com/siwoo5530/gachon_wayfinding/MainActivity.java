@@ -7,12 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 
 public class MainActivity extends AppCompatActivity {
 
     private EditText et_id;
     private Button btn_test;
     private Button btn_move;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {//앱이 처음시작할때 실행되는 생명주기

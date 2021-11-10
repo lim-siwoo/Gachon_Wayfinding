@@ -2,18 +2,20 @@
 <resources>
     <string-array name="buildings">
         <item>기숙사</item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-
-
-
+        <item>중앙도서관</item>
+        <item>교육대학원</item>
+        <item>가천관</item>
+        <item>한의대</item>
+        <item>공과대학2</item>
+        <item>바이오나노연구원</item>
+        <item>법과대학</item>
+        <item>비전타워</item>
+        <item>IT대학</item>
+        <item>글로벌센터</item>
+        <item>공과대학1</item>
+        <item>예술대학1</item>
+        <item>예술대학2</item>
+        <item>바이오나노대학</item>
 
 
     </string-array>

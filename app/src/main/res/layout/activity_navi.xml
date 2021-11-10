@@ -7,25 +7,30 @@
     tools:context=".NaviActivity">
 
     <Spinner
-        android:id="@+id/Start"
+        android:id="@+id/spn_str"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="88dp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/Destination"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Spinner
-        android:id="@+id/Destination"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:minHeight="48dp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="342dp" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spn_des"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spn_str" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
