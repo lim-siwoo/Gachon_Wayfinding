@@ -8,6 +8,8 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Button btn_move;
+
     EditText et_id;
     Button btn_test;
 
@@ -21,8 +23,9 @@ public class MainActivity extends AppCompatActivity {
         btn_test = findViewById(R.id.btn_test);
 
         btn_test.setOnClickListener(new View.OnClickListener() {
+
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) {//버튼을 누르면 실행됨
                 et_id.setText("Helloworld");
             }
         });
