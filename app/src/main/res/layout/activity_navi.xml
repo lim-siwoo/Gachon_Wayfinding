@@ -10,6 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/layout_map"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_weight="1">
@@ -18,12 +19,14 @@
             android:id="@+id/mapLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:contentDescription="mapLayout"
             android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/image_view"
                 android:layout_width="match_parent"
                 android:layout_height="331dp"
+                android:contentDescription="@string/image_map"
                 android:src="@mipmap/img" />
 
         </LinearLayout>
@@ -32,6 +35,7 @@
             android:id="@+id/spn_str"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="32dp"
             android:gravity="center"
             android:minHeight="48dp"
@@ -39,13 +43,13 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_gravity="center"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Spinner
             android:id="@+id/spn_des"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="32dp"
             android:gravity="center"
             android:minHeight="48dp"
@@ -53,19 +57,18 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/spn_str"
-            android:layout_gravity="center"/>
+            app:layout_constraintTop_toBottomOf="@+id/spn_str" />
 
         <TextView
             android:id="@+id/text_result"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="19dp"
+            android:layout_gravity="center"
             android:layout_marginTop="100dp"
             android:text="에서 까지 몇미터입니다."
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/spn_des"
-            android:layout_gravity="center"/>
+            app:layout_constraintTop_toBottomOf="@+id/spn_des" />
 
     </LinearLayout>
 </LinearLayout>

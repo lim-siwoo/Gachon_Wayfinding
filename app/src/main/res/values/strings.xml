@@ -2,4 +2,6 @@
     <string name="app_name">Gachon_Wayfinding</string>
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
+    <string name="image_map">ImageMap</string>
+    <string name="layout_map">layoutMap</string>
 </resources>
