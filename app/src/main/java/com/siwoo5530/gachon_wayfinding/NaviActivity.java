@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class NaviActivity extends AppCompatActivity {
@@ -16,6 +17,10 @@ public class NaviActivity extends AppCompatActivity {
     private Spinner spn_str;
     private Spinner spn_des;
     private String[] buildings;
+    private String start;
+    private String destination;
+    private TextView text_result;
+
 
 
     @Override
@@ -25,6 +30,12 @@ public class NaviActivity extends AppCompatActivity {
 
         spn_str = (Spinner)findViewById(R.id.spn_str);
         spn_des = (Spinner)findViewById(R.id.spn_des);
+        text_result = findViewById(R.id.text_result);
+
+        //DijkstraAlgorithm dijkstra = new DijkstraAlgorithm(start,destination);
+        double distance = 100;
+
+        text_result.setText("출발지와 도착지를 선택해주세요");
 
         ArrayAdapter<CharSequence> buildingAdapter = ArrayAdapter.createFromResource(this, R.array.buildings, android.R.layout.simple_spinner_item);
         buildingAdapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
@@ -35,8 +46,8 @@ public class NaviActivity extends AppCompatActivity {
         spn_str.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getApplicationContext(),String.valueOf(parent.getSelectedItem()),
-                        Toast.LENGTH_SHORT).show();
+                start = parent.getItemAtPosition(position).toString();
+                //Toast.makeText(getApplicationContext(),String.valueOf(start), Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -48,8 +59,10 @@ public class NaviActivity extends AppCompatActivity {
         spn_des.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getApplicationContext(),String.valueOf(parent.getSelectedItem()),
-                        Toast.LENGTH_SHORT).show();
+
+                destination = parent.getItemAtPosition(position).toString();
+                //Toast.makeText(getApplicationContext(),destination, Toast.LENGTH_SHORT).show();
+                text_result.setText(start+" 에서 "+destination+" 까지는 "+distance+"미터 입니다.");
             }
 
             @Override
