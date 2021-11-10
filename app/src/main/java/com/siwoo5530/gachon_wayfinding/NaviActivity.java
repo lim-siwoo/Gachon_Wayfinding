@@ -2,6 +2,7 @@ package com.siwoo5530.gachon_wayfinding;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -17,6 +18,9 @@ public class NaviActivity extends AppCompatActivity {
         setContentView(R.layout.activity_navi);
 
         test = (ImageView)findViewById(R.id.test);
+        Intent intent = getIntent();
+
+
         test.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
