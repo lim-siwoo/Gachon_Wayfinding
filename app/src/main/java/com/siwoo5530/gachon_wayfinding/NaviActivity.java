@@ -16,7 +16,6 @@ public class NaviActivity extends AppCompatActivity {
 
     private Spinner spn_str;
     private Spinner spn_des;
-    private String[] buildings;
     private String start;
     private String destination;
     private TextView text_result;
@@ -32,8 +31,7 @@ public class NaviActivity extends AppCompatActivity {
         spn_des = (Spinner)findViewById(R.id.spn_des);
         text_result = findViewById(R.id.text_result);
 
-        //DijkstraAlgorithm dijkstra = new DijkstraAlgorithm(start,destination);
-        double distance = 100;
+
 
         text_result.setText("출발지와 도착지를 선택해주세요");
 
@@ -62,6 +60,8 @@ public class NaviActivity extends AppCompatActivity {
 
                 destination = parent.getItemAtPosition(position).toString();
                 //Toast.makeText(getApplicationContext(),destination, Toast.LENGTH_SHORT).show();
+                DijkstraAlgorithm dijkstra = new DijkstraAlgorithm(start,destination);
+                double distance = dijkstra.getDistance();
                 text_result.setText(start+" 에서 "+destination+" 까지는 "+distance+"미터 입니다.");
             }
 
