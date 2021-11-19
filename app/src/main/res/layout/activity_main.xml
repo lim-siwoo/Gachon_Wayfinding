@@ -5,18 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:weightSum="10">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:orientation="vertical"
-        android:layout_weight="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_weight="2">
+        android:layout_weight="6"
+        android:weightSum="10">
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="20dp"
+            android:layout_height="0dp"
             android:text="Gachon_Way_Finding"
             android:gravity="center"
             android:textColor="@color/white"
@@ -26,22 +26,20 @@
         <ImageView
             android:id="@+id/image_view"
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="0dp"
             android:layout_weight="9"
             android:src="@mipmap/main_image" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:orientation="vertical"
-        android:layout_weight="1"
-        android:background="@color/gachon"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_weight="1">
+        android:layout_weight="4"
+        android:background="@color/gachon">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_weight="1">
         </LinearLayout>
 
@@ -63,7 +61,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_weight="1">
         </LinearLayout>
     </LinearLayout>
