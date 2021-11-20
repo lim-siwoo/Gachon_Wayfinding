@@ -46,6 +46,9 @@ public class NaviActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 start = parent.getItemAtPosition(position).toString();
                 //Toast.makeText(getApplicationContext(),String.valueOf(start), Toast.LENGTH_SHORT).show();
+                DijkstraAlgorithm dijkstra = new DijkstraAlgorithm(start,destination);
+                double distance = dijkstra.getDistance();
+                text_result.setText(start+" 에서 "+destination+" 까지는 "+distance+"미터 입니다.");
             }
 
             @Override
