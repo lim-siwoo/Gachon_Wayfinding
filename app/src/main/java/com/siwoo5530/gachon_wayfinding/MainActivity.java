@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        et_id = findViewById(R.id.et_id);
+        et_id = findViewById(R.id.title);
         btn_test = findViewById(R.id.btn_test);
         btn_move = findViewById(R.id.btn_move);
 
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {//버튼을 누르면 실행됨
-                et_id.setText("Helloworld");
+                //et_id.setText("Helloworld");
             }
         });
 

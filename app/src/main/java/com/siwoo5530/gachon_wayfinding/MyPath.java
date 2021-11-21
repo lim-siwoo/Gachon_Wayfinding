@@ -1,11 +1,15 @@
 package com.siwoo5530.gachon_wayfinding;
 
+import android.graphics.PointF;
+
 import  java.util.ArrayList;
 
 public class MyPath
 {
     ArrayList <Integer> xArray = new ArrayList<Integer>();
     ArrayList <Integer> yArray = new ArrayList<Integer>();
+
+    ArrayList <PointF> pointFS = new ArrayList<PointF>();
 
     public MyPath(ArrayList<String> stops) {
 
