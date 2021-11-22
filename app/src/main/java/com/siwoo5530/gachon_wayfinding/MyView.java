@@ -19,8 +19,10 @@ public class MyView extends View {
     private Paint pnt = new Paint(Paint.ANTI_ALIAS_FLAG);
 
     public static Bitmap uniMap;
+    //public MyPath myPath = new MyPath();
 
-    private PointF pointA, pointB;
+    public PointF pointA = new PointF();
+    public PointF pointB = new PointF();
     public MyView(Context context) {
         super(context);
     }
@@ -45,19 +47,21 @@ public class MyView extends View {
         height = uniMap.getHeight();
         height = (int) (height / scale);
         Bitmap resize_bitmap = Bitmap.createScaledBitmap(uniMap,width,height,true);
-        ByteArrayOutputStream stream = new ByteArrayOutputStream();
-        pnt.setColor(Color. BLUE );
-        pnt.setStrokeWidth(10.0f);
-
+        pnt.setColor(Color. BLUE );//선 색깔
+        pnt.setStrokeWidth(5.0f);//선 굵기
         canvas.drawColor(Color. GRAY);
         canvas.drawBitmap(resize_bitmap,0,0,null);
 
-        //canvas.drawLine(pointA.x,pointA.y, pointB.x,pointB.y,pnt);
-        //canvas.drawBitmap();
-        canvas.drawCircle(200, 200, 50, pnt);
-        pnt.setStyle(Paint.Style.STROKE);
+        //testLine
 
-        canvas.drawCircle(300,300,100,pnt);
+        pointA.set(50.00f,50.00f);//시작점
+        pointB.set(1100.00f,900.00f);//도착점
+
+        canvas.drawLine(pointA.x,pointA.y, pointB.x,pointB.y,pnt);//선긋기
+        canvas.drawCircle(200, 200, 50, pnt);//채운원그리기
+        pnt.setStyle(Paint.Style.STROKE);//원 둘레에만하기
+
+        canvas.drawCircle(300,300,100,pnt);//빈 원그리기
     }
 
     public void setPointA(PointF point){
