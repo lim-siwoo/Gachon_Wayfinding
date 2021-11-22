@@ -34,15 +34,16 @@
         <com.siwoo5530.gachon_wayfinding.MyView
             android:id="@+id/MyView"
             android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:layout_weight="1" />
+            android:layout_height="350dp"
+            android:layout_weight="1"
+            /><!--  android:adjustViewBounds="true"-->
 
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/MenuLayout"
         android:layout_width="match_parent"
-        android:layout_height="283dp"
+        android:layout_height="333dp"
         android:layout_weight="1"
         android:background="@color/gachon"
         android:orientation="vertical"

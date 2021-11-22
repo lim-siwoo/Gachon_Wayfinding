@@ -36,13 +36,21 @@ public class MyView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+        int width = canvas.getWidth();
+        int height = canvas.getHeight();
+        double scale;
+
         uniMap = BitmapFactory.decodeResource(getResources(),R.drawable.uni_map);
+        scale = uniMap.getWidth()/width;
+        height = uniMap.getHeight();
+        height = (int) (height / scale);
+        Bitmap resize_bitmap = Bitmap.createScaledBitmap(uniMap,width,height,true);
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
         pnt.setColor(Color. BLUE );
         pnt.setStrokeWidth(10.0f);
 
         canvas.drawColor(Color. GRAY);
-        canvas.drawBitmap(uniMap,(canvas.getWidth()/50),0,null);
+        canvas.drawBitmap(resize_bitmap,0,0,null);
 
         //canvas.drawLine(pointA.x,pointA.y, pointB.x,pointB.y,pnt);
         //canvas.drawBitmap();
