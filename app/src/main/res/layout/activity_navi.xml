@@ -32,7 +32,7 @@
 <!--            android:layout_height="400dp"-->
 <!--            android:layout_weight="1" />-->
         <com.siwoo5530.gachon_wayfinding.MyView
-            android:id="@+id/MyView"
+            android:id="@+id/customView"
             android:layout_width="match_parent"
             android:layout_height="350dp"
             android:layout_weight="1"

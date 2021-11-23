@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Path;
+import android.graphics.PointF;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -16,6 +18,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 public class NaviActivity extends AppCompatActivity {
 
     private Spinner spn_str;
@@ -23,8 +27,10 @@ public class NaviActivity extends AppCompatActivity {
     private String start;
     private String destination;
     private TextView text_result;
-    private View myView;
-
+    private MyView myView;
+    private PointF startP = new PointF(1000,600);
+    private PointF destiP = new PointF(500,700);
+    private Path route;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,8 +39,12 @@ public class NaviActivity extends AppCompatActivity {
         spn_str = (Spinner)findViewById(R.id.spn_str);
         spn_des = (Spinner)findViewById(R.id.spn_des);
         text_result = findViewById(R.id.text_result);
-        myView = findViewById(R.id.MyView);
-        //MyView vw = new MyView(this);
+        myView = (MyView) findViewById(R.id.customView);
+
+        myView.setPointA(startP);
+        myView.setPointB(destiP);
+
+        //myView.draw();
 
         text_result.setText("출발지와 도착지를 선택해주세요");
 
@@ -66,6 +76,21 @@ public class NaviActivity extends AppCompatActivity {
                 DijkstraAlgorithm dijkstra = new DijkstraAlgorithm(start,destination);
                 double distance = dijkstra.getDistance();
                 text_result.setText(start+" 에서 "+destination+" 까지는 "+distance+"미터 입니다.");
+                ArrayList<String> stops = dijkstra.getStops();
+                MyPath myPath = new MyPath(stops);
+                ArrayList<PointF> pointFS = myPath.getPointFS();
+                for (int i =0;i < pointFS.size();i++){
+//                    System.out.println(i);
+                }
+                myView.setPointFS(pointFS);
+//                myView.setMyPath();
+//                path.setStops(stops);
+//                myView.setMyPath(path);
+//                startP.set(600,100);
+//                destiP.set(700,100);
+//                myView.setPointA(startP);
+//                myView.setPointB(destiP);
+                myView.draw();
             }
 
             @Override

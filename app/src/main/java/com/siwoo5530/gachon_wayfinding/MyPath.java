@@ -9,10 +9,16 @@ public class MyPath
     ArrayList <Integer> xArray = new ArrayList<Integer>();
     ArrayList <Integer> yArray = new ArrayList<Integer>();
 
+    public ArrayList<PointF> getPointFS() {
+        return pointFS;
+    }
+
     ArrayList <PointF> pointFS = new ArrayList<PointF>();
 
-    public MyPath(ArrayList<String> stops) {
 
+
+
+    public MyPath(ArrayList<String> stops) {
         ArrayList<String> name = new ArrayList<String>();
         ArrayList<Integer> x = new ArrayList<Integer>();
         ArrayList<Integer> y = new ArrayList<Integer>();
@@ -48,7 +54,7 @@ public class MyPath
         name.add("27");		x.add(446); y.add(290);
 
 
-
+        pointFS.clear();
 
         for(int i=0; i<stops.size();i++)
         {
@@ -56,8 +62,10 @@ public class MyPath
             {
                 if(name.get(j).equals(stops.get(i)))
                 {
-                    xArray.add(x.get(j));
-                    yArray.add(y.get(j));
+                    PointF temp = new PointF(x.get(j)*1.4f,y.get(j)*1.5f);
+                    pointFS.add(i,temp);
+                    //xArray.add(x.get(j));
+                    //yArray.add(y.get(j));
                 }
             }
         }

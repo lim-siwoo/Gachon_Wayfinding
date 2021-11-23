@@ -196,7 +196,7 @@ public class DijkstraAlgorithm {
 
         distance = result.distances.get(destination);
 
-
+        stops.clear();
         String curNode = destination;
         stops.add(destination);
         while(!result.preNode.get(curNode).isEmpty()){
