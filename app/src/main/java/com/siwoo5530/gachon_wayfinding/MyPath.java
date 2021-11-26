@@ -54,6 +54,7 @@ public class MyPath
         name.add("27");		x.add(446); y.add(290);
 
 
+
         pointFS.clear();
 
         for(int i=0; i<stops.size();i++)
