@@ -62,10 +62,8 @@ public class MyPath
             {
                 if(name.get(j).equals(stops.get(i)))
                 {
-                    PointF temp = new PointF(x.get(j)*1.4f,y.get(j)*1.5f);
+                    PointF temp = new PointF(x.get(j)*1.4f-20,y.get(j)*1.5f);
                     pointFS.add(i,temp);
-                    //xArray.add(x.get(j));
-                    //yArray.add(y.get(j));
                 }
             }
         }

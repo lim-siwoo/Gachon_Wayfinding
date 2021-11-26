@@ -57,20 +57,16 @@ public class MyView extends View {
         height = (int) (height / scale);
         Bitmap resize_bitmap = Bitmap.createScaledBitmap(uniMap,width,height,true);
         pnt.setColor(Color. BLUE );//선 색깔
+        pnt.setStyle((Paint.Style.FILL));
         pnt.setStrokeWidth(5.0f);//선 굵기
         canvas.drawColor(Color. GRAY);
         canvas.drawBitmap(resize_bitmap,0,0,null);
-
-
-
-        //canvas.drawLine(pointA.x,pointA.y, pointB.x,pointB.y,pnt);//선긋기
-
-//        route.moveTo(100,100);
-
         if (pointFS !=null) {
+            canvas.drawCircle(pointFS.get(0).x,pointFS.get(0).y,10,pnt);
             for (int i =0;i < pointFS.size()-1;i++){
                 canvas.drawLine(pointFS.get(i).x,pointFS.get(i).y,pointFS.get(i+1).x,pointFS.get(i+1).y,pnt);
             }
+            canvas.drawCircle(pointFS.get(pointFS.size()-1).x,pointFS.get(pointFS.size()-1).y,10,pnt);
         }
     }
 

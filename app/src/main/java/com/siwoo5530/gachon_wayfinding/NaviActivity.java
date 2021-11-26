@@ -79,17 +79,7 @@ public class NaviActivity extends AppCompatActivity {
                 ArrayList<String> stops = dijkstra.getStops();
                 MyPath myPath = new MyPath(stops);
                 ArrayList<PointF> pointFS = myPath.getPointFS();
-                for (int i =0;i < pointFS.size();i++){
-//                    System.out.println(i);
-                }
                 myView.setPointFS(pointFS);
-//                myView.setMyPath();
-//                path.setStops(stops);
-//                myView.setMyPath(path);
-//                startP.set(600,100);
-//                destiP.set(700,100);
-//                myView.setPointA(startP);
-//                myView.setPointB(destiP);
                 myView.draw();
             }
 
