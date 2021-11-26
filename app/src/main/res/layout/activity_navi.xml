@@ -80,7 +80,8 @@
             android:text="에서 까지 몇미터입니다."
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/spn_des" />
+            app:layout_constraintTop_toBottomOf="@+id/spn_des"
+            android:background="@color/pascal_little_blue"/>
 
         <TextView
             android:id="@+id/textView2"
