@@ -10,111 +10,84 @@
     android:weightSum="10">
 
     <LinearLayout
-        android:id="@+id/MapLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0"
+        android:layout_height="0dp"
         android:orientation="vertical"
+        android:layout_weight="6"
         android:weightSum="10">
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="0dp"
             android:layout_weight="1"
             android:background="@color/gachon"
             android:gravity="center"
             android:text="Gachon_Way_Finding"
-            android:textColor="#4A148C" />
+            android:textColor="@color/white" />
 
-<!--        <View-->
-<!--            android:id="@+id/View"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="400dp"-->
-<!--            android:layout_weight="1" />-->
-        <com.siwoo5530.gachon_wayfinding.MyView
-            android:id="@+id/customView"
+        <ImageView
+            android:id="@+id/image_view"
             android:layout_width="match_parent"
-            android:layout_height="350dp"
-            android:layout_weight="1"
-            /><!--  android:adjustViewBounds="true"-->
+            android:layout_height="0dp"
+            android:src="@mipmap/img"
+            android:layout_weight="9"/>
 
 
     </LinearLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/MenuLayout"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="333dp"
-        android:layout_weight="1"
-        android:background="@color/gachon"
+        android:layout_height="0dp"
         android:orientation="vertical"
-        android:weightSum="5">
+        android:layout_weight="4"
+        android:weightSum="5"
+        android:background="@color/gachon">
 
         <Spinner
             android:id="@+id/spn_str"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:layout_marginTop="32dp"
-            android:background="@color/white"
             android:gravity="center"
             android:minHeight="48dp"
             android:visibility="visible"
+            android:background="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_gravity="center"/>
 
         <Spinner
             android:id="@+id/spn_des"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:layout_marginTop="32dp"
-            android:background="@color/white"
             android:gravity="center"
             android:minHeight="48dp"
             android:visibility="visible"
+            android:background="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/spn_str" />
+            app:layout_constraintTop_toBottomOf="@+id/spn_str"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/text_result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:layout_marginTop="50dp"
             android:text="에서 까지 몇미터입니다."
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/spn_des" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="출발지"
-            app:layout_constraintBottom_toTopOf="@+id/textView3"
-            app:layout_constraintEnd_toStartOf="@+id/spn_str"
-            app:layout_constraintHorizontal_bias="0.56"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.424" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="12dp"
-            android:text="도착지"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/spn_des"
-            app:layout_constraintHorizontal_bias="0.672"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.462" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            app:layout_constraintTop_toBottomOf="@+id/spn_des"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/gachon">
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
