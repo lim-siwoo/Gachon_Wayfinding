@@ -8,4 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="gachon">#03A9F4</color>
+    <color name="pascal_blue">#aee4ff</color>
+    <color name="pascal_little_blue">#c4f4fe</color>
+    <color name="pascal_green">#afffba</color>
+    <color name="pascal_orange">#f2cfa5</color>
+    <color name="pascal_puple">#caa6fe</color>
 </resources>

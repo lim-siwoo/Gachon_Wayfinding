@@ -15,15 +15,6 @@
         android:layout_weight="6"
         android:weightSum="10">
 
-        <TextView
-            android:id="@+id/Title"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@color/gachon"
-            android:gravity="center"
-            android:text="Gachon_Way_Finding"
-            android:textColor="@color/white" />
 
         <ImageView
             android:id="@+id/image_view"
@@ -38,7 +29,7 @@
         android:layout_height="0dp"
         android:orientation="vertical"
         android:layout_weight="4"
-        android:background="@color/gachon">
+        android:background="@color/pascal_blue">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"

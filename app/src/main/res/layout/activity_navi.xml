@@ -17,15 +17,6 @@
         android:orientation="vertical"
         android:weightSum="10">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:background="@color/gachon"
-            android:gravity="center"
-            android:text="Gachon_Way_Finding"
-            android:textColor="#4A148C" />
-
 <!--        <View-->
 <!--            android:id="@+id/View"-->
 <!--            android:layout_width="match_parent"-->
@@ -46,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="333dp"
         android:layout_weight="1"
-        android:background="@color/gachon"
+        android:background="@color/pascal_blue"
         android:orientation="vertical"
         android:weightSum="5">
 
