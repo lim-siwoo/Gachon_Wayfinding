@@ -55,7 +55,6 @@ public class MyPath
 
 
 
-
         pointFS.clear();
 
         for(int i=0; i<stops.size();i++)
