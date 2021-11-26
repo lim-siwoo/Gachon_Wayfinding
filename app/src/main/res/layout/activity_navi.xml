@@ -38,6 +38,7 @@
             android:layout_weight="1"
             /><!--  android:adjustViewBounds="true"-->
 
+
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
