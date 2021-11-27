@@ -3,7 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/82103/AndroidStudioProjects/Gachon_Wayfinding/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/Gachon_Wayfinding/app/src/main/res/font/font.xml" value="0.1398148148148148" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/Gachon_Wayfinding/app/src/main/res/layout/activity_main.xml" value="0.6" />
         <entry key="..\:/Users/82103/AndroidStudioProjects/Gachon_Wayfinding/app/src/main/res/layout/activity_navi.xml" value="0.1" />
         <entry key="..\:/Users/sisi_/AndroidStudioProjects/Gachon_Wayfinding2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.4583333333333333" />
         <entry key="..\:/Users/sisi_/AndroidStudioProjects/Gachon_Wayfinding2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.4583333333333333" />
