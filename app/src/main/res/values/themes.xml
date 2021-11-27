@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Gachon_Wayfinding" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.Gachon_Wayfinding" parent="Theme.MaterialComponents.DayNight.DarkActionBar" style="@font/tooba">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/pascal_puple</item>
         <item name="colorPrimaryVariant">@color/pascal_puple</item>

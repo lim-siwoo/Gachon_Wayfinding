@@ -42,7 +42,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="clip_vertical"
-            android:text="move" />
+            android:text="move"
+            android:fontFamily="@font/inside" />
 
         <LinearLayout
             android:layout_width="match_parent"
