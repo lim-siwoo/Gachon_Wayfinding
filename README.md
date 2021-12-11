@@ -1,8 +1,14 @@
 # Gachon_Wayfinding
-Gachon univ. algorithm_project
+2021 Gachon univ. algorithm_termProject
 
-![playstore](https://user-images.githubusercontent.com/15250755/145667934-e4495210-57d5-468b-b1c8-b8391ea057a2.jpg){: width="30%" height="30%"}
+### Download at PlayStore!!!
 
-![screen1](https://user-images.githubusercontent.com/15250755/145667939-18046a6a-7e59-4f9f-bbec-00a54c324446.jpg){: width="30%" height="30%"}
+<img src="https://user-images.githubusercontent.com/15250755/145667934-e4495210-57d5-468b-b1c8-b8391ea057a2.jpg"  width="40%" height="40%"/>
 
-![screen2](https://user-images.githubusercontent.com/15250755/145667941-b9f6d615-a2ea-4968-aaa8-dfcdb97eaf5b.jpg){: width="30%" height="30%"}
+### MainScreen
+
+<img src="https://user-images.githubusercontent.com/15250755/145667939-18046a6a-7e59-4f9f-bbec-00a54c324446.jpg"  width="40%" height="40%"/>
+
+### NaviScreen
+
+<img src="https://user-images.githubusercontent.com/15250755/145667941-b9f6d615-a2ea-4968-aaa8-dfcdb97eaf5b.jpg"  width="40%" height="40%"/>
